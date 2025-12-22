@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ), url("/Assets/Img/imgSinuca.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hero h1:hover {
+    transform: translateY(-4px);
+    text-shadow:
+        0 0 6px rgba(26, 188, 156, 0.5),
+        0 0 12px rgba(26, 188, 156, 0.3);
+}
+
+.hero h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background-color: #1abc9c;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.hero h1:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #dddddd;
+}
+
+.hero-title:hover {
+    transform: translateY(-4px);
+    text-shadow:
+        0 0 8px rgba(26, 188, 156, 0.6),
+        0 0 16px rgba(26, 188, 156, 0.4);
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: #000;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* SECTIONS */
+.section {
+    padding: 55px 0;
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+.bg-dark {
+    background-color: #1a1a1a;
+}
+
+/* LISTA */
+.lista {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.lista li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0e0e0e;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
