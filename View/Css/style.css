@@ -31,7 +31,7 @@ body {
     background-image: linear-gradient(
         rgba(0,0,0,0.75),
         rgba(0,0,0,0.75)
-    ), url("/Assets/Img/imgSinuca.jpg");
+    ), url("../../Assets/Img/imgSinuca.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
